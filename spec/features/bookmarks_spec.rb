@@ -12,3 +12,13 @@ feature 'User can view list of bookmarks' do
     expect(page).to have_content("http://www.youtube.com")
   end
 end
+
+feature 'User can create new bookmark' do
+  scenario 'User adds bookmark' do
+    visit('/bookmarks/new')
+    fill_in('url', with: 'http://testbookmark.com')
+    click_button('Submit')
+    
+    expect(page).to have_content 'http://testbookmark.com'
+  end
+end
