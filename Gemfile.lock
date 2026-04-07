@@ -22,10 +22,9 @@ GEM
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     pg (1.2.3)
-    pg (1.2.3-x64-mingw32)
     public_suffix (5.0.0)
     racc (1.8.1)
-    rack (3.1.12)
+    rack (3.1.21)
     rack-protection (4.1.0)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -63,7 +62,7 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
+  x64-mingw-ucrt
 
 DEPENDENCIES
   capybara
